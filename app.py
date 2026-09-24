@@ -19,7 +19,7 @@ try:
 except ImportError:
     AUTOREFRESH_AVAILABLE = False
 
-st.set_page_config(page_title="CrowdFlow AI", layout="wide", page_icon="🏟️")
+st.set_page_config(page_title="VenuePulse-AI", layout="wide", page_icon="🏟️")
 inject_css()
 
 # ---------------------------------------------------------------
@@ -63,7 +63,7 @@ if 'current_event' not in st.session_state:
 # ---------------------------------------------------------------
 # Sidebar — global navigation
 # ---------------------------------------------------------------
-st.sidebar.markdown("### 🏟️ CrowdFlow AI")
+st.sidebar.markdown("### 🏟️ VenuePulse-AI")
 app_mode = st.sidebar.radio("View", ["🌍 Global Tracker", "🏟️ Venue Simulation"], label_visibility="collapsed")
 st.sidebar.markdown("---")
 
@@ -218,7 +218,7 @@ elif app_mode == "🏟️ Venue Simulation":
     predictions, risks, trends = predict_future_congestion(sim.history, G, steps_ahead=5)
 
     # ---- Header ----
-    app_header(st.session_state.current_event, "CROWDFLOW AI · VENUE SIMULATION", live=st.session_state.live_mode)
+    app_header(st.session_state.current_event, "VenuePulse-AI · VENUE SIMULATION", live=st.session_state.live_mode)
 
     # ---- KPI row ----
     peak_node, peak_count = sim.peak_zone()
