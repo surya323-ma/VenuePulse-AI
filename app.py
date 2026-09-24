@@ -28,7 +28,7 @@ inject_css()
 @st.cache_data
 def get_coordinates(location_name):
     try:
-        geolocator = Nominatim(user_agent="crowdflow_ai_bot")
+        geolocator = Nominatim(user_agent="VenuePulse_ai_bot")
         location = geolocator.geocode(location_name)
         if location:
             return location.latitude, location.longitude
@@ -71,7 +71,7 @@ st.sidebar.markdown("---")
 # GLOBAL TRACKER
 # =================================================================
 if app_mode == "🌍 Global Tracker":
-    app_header("Global Crowd Events Tracker", "CROWDFLOW AI · WORLD VIEW")
+    app_header("Global Crowd Events Tracker", " VenuePulse-AI· WORLD VIEW")
     st.write("Live overview of major crowd events worldwide, with distance from your location.")
 
     st.sidebar.markdown("#### 📍 Your Location")
@@ -377,7 +377,7 @@ elif app_mode == "🏟️ Venue Simulation":
             st.download_button(
                 "⬇️ Download Simulation History (CSV)",
                 data=csv_buf.getvalue(),
-                file_name=f"crowdflow_{st.session_state.current_event.split(' ')[0]}_{datetime.now():%Y%m%d_%H%M}.csv",
+                file_name=f"VenuePulse_{st.session_state.current_event.split(' ')[0]}_{datetime.now():%Y%m%d_%H%M}.csv",
                 mime="text/csv",
             )
 
