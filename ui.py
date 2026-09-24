@@ -1,7 +1,7 @@
 """
 ui.py
 ------------------------------------------------------------------
-Small design-system layer for CrowdFlow AI.
+Small design-system layer for VenuePulse-AI.
 
 Keeping all styling / reusable visual components in one place means
 app.py stays focused on layout & data-wiring, and the look of the
