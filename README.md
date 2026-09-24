@@ -1,4 +1,4 @@
-# 🏟️ CrowdFlow AI
+# 🏟️ VenuePulse-AI
 
 Predictive crowd-flow monitoring and smart routing for large-scale event venues, plus a
 global tracker of major live events.
